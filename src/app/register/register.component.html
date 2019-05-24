@@ -1,0 +1,11 @@
+<div class="login-wrap">
+    <h2>Register</h2>
+
+    <div class="form" method="post" action="">
+      <input [(ngModel)]="registerUserData.username" name="username" type="text" placeholder="Username"  required>
+      <input [(ngModel)]="registerUserData.email" name="email" type="text" placeholder="Email"  required>
+      <input [(ngModel)]="registerUserData.password" name="password" type="password" placeholder="Password"  required>
+      <button (click)="registerUser()" type="button" class="btn btn-primary float-center" style="margin-left:32px">Register</button>
+      <a [routerLink]="['/login']"> <p> Already have an account? click here </p></a>
+    </div>
+  </div>

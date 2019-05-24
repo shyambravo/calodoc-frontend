@@ -1,0 +1,14 @@
+
+    <div class="login-wrap">
+        <h2>Login</h2>
+
+        <div class="form" method="post" action="">
+            <input [(ngModel)]="loginUserData.email" name="email" type="text" placeholder="Email"  required>
+            <input [(ngModel)]="loginUserData.password" name="password" type="password" placeholder="Password"  required>
+            <button (click)="loginUser()" type="button" class="btn btn-success float-center" style="margin-left:32px">Login</button>
+          <a [routerLink]="['/register']"> <p> Don't have an account? Register </p></a>
+        </div>
+      </div>
+
+
+
